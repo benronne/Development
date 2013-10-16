@@ -22,7 +22,7 @@ order_create = gets.chomp.downcase
 if order_create == "yes"
 	puts "Alright!  Let's get started."
 elsif order_create == "no"
-	puts "Well, you look pretty hungry to me."
+	puts "Well, you look pretty hungry to me.  I think you should have something."
 else
 	puts "I'm sorry, I don't speak Spanish."
 end
@@ -42,7 +42,7 @@ puts "Got it.  What kind of drink would you like?  Coke or Diet Coke?"
 your_order.drink=gets.chomp
 
 puts "And what would you like on the side?  Fries or Onion Rings?"
-your_order.side=gets.chomp
+your_order.side=gets.chomp.downcase
 
 
 
