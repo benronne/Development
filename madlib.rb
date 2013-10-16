@@ -3,10 +3,10 @@ puts "Welcome to Ruby Madlibs!\n"
 puts "Let's start with a name of someone you know."
 name = gets.chomp
 
-puts "Please enter a noun (a person, place or thing)."
+puts "Now, enter a noun (a person, place or thing)."
 noun_1 = gets.chomp
 
-puts "Thanks!  How about an adverb (something that ends in 'ly'."
+puts "Thanks!  How about an adverb (something that ends in 'ly')."
 adverb = gets.chomp
 
 puts "Nice work!  Now, please enter a verb (that ends in 'ing')."
@@ -15,7 +15,7 @@ verb_1 = gets.chomp
 puts "Great.  Now, enter another noun."
 noun_2 = gets.chomp
 
-puts "Now, enter another verb (in the past tense)"
+puts "Okay.  Enter another verb (in the past tense)"
 verb_2 = gets.chomp
 
 puts "And enter one more noun..."
