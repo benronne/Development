@@ -1,8 +1,8 @@
 body {
-	background-image: url(/public/images/background.jpg);
+	background-image: url('/images/background.jpg');
 	background-repeat: repeat;
-	font-family: 'Bubbler+One', sans-serif;
-	font: #ffffff;
+	font-family: 'Miltonian Tattoo', sans-serif;
+	color: #ffffff;
 }
 
 #page_wrapper {
@@ -13,7 +13,7 @@ body {
 }
 
 #navigation {
-	background-color: #000000;
+	background: rgba(0, 0, 0, 0.90);
 }
 
 #navigation ul {
@@ -28,17 +28,24 @@ body {
 }
 
 h1 {
+	background: rgba(0, 0, 0, 0.90);
+	font-weight: bold; 
 	padding: 20px;
 }
 #main_content {
-	background-color: #000000;
-	color: #ffffff;
+	background: rgba(0, 0, 0, 0.90);
 	padding: 10px 20px 10px 20px;
-
+	font-size: 14pt;
 }
 
 #main_content p {
 	line-height: 1.5em;
+}
+
+#main_content img {
+	float: right;
+	width: 200px;
+	padding: 40px 15px 40px 15px;
 }
 
 #main_content ul {
@@ -49,9 +56,17 @@ h1 {
 	color: #ffffff;
 }
 
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
 #footer {
-	background-color: #000000;
-	color: #ffffff;
+	clear: both;
+	background: rgba(0, 0, 0, 0.90);
 	margin: 20px 0px 20px 0px;
 	padding: 20px;
 }
@@ -71,7 +86,7 @@ a:visited {
 }
 
 a:hover {
-	text-decoration: bold;
+	text-decoration: underline;
 	color: #ffffff;
 }
 
