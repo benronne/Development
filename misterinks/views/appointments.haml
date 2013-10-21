@@ -1,0 +1,23 @@
+%header
+	%h1 Book an Appointment with Mister Ink's
+
+#main_content
+	%form{:action => "/Appointments", :method => "POST"}
+		%fields
+			%ul
+				%li
+					%label{:for => "fname"} First Name:
+					%input{:type => "text", :name => "fname", :class => "text"} 
+				%li
+					%label{:for => "lname"} Last Name:
+					%input{:type => "text", :name => "lname", :class => "text"}
+				%li
+					%label{:for => "email"} Email:
+					%input{:type => "text", :name => "email", :class => "text"} 
+				%li
+					%label{:for => "phone"} Phone:
+					%input{:type => "text", :name => "phone", :class => "text"}
+				%li
+					%label{:for => "tattoo"} Tattoo Idea:
+					%textarea{:name => "tattoo"}
+			%input{:type => "submit", :value => "Submit", :class => "button"} 

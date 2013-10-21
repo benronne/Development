@@ -1,0 +1,19 @@
+!!!
+
+%html
+	%head
+		%title Mister Ink's Custom Tattooing
+		%link{rel: "stylesheet", href: "/stylesheet.css", type: "text/css"}
+		%link{href:"http://fonts.googleapis.com/css?family=Miltonian+Tattoo|Bubbler+One", rel: "stylesheet", type: "text/css"}
+	%body
+		#page_wrapper
+			#navigation
+				%ul
+					-["Home", "About", "Appointments", "Samples"].each do |item|
+						%li
+							%a{href: "/#{item}"}=item
+			#content_wrapper
+				=yield
+			#footer
+				For more information, please 
+				%a{href:'mailto:ben.ronne@gmail.com'}email us.
