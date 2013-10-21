@@ -24,11 +24,8 @@ vowels = ["a","e","i","o","u"]
 string_with_no_vowels = []
 #Compare each letter in the original string to the vowels
 string.split("").each do |letter|
-#If the letter is a vowel, add it to the array as a space    
-    if vowels.include?(letter)
-        string_with_no_vowels.push("")
-#If the letter is not a vowel, add it to the array as it is
-    else
+#If the letter is not a vowel, add it to the array    
+    if !vowels.include?(letter)
         string_with_no_vowels.push(letter)
 	end
 end
@@ -48,11 +45,8 @@ string_no_duplicates = []
 double_letters = string.scan(/((.)\2+)/).flatten
 #Compare each letter in the original string to the duplicate letters
 string.split(/((.)\2+)/).each do |letter|
-#If the letter is a duplicate, add it to the array as a space
-	if double_letters.include?(letter)
-		string_no_duplicates.push("")
-#Otherwise, add it to the array as is
-	else
+#If the letter is not a duplicate, add it to the array
+	if !double_letters.include?(letter)
 		string_no_duplicates.push(letter)
 	end
 end
