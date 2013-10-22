@@ -58,13 +58,28 @@ h1 {
 	color: #ffffff;
 }
 
+#main_content form {
+	width: 650px;
+}
+
 #main_content label {
+	width: 150px;
 	margin: 5px;
+	display: inline-block;
 }
 
 #main_content input {
+	width: 250px;
 	margin: 5px;
 }
+
+#main_content input.button {
+	width: 100px;
+	margin: 5px 5px 20px 10px;
+	position: relative;
+	left: 200px;
+}
+
 
 .clearfix:after {
     content: ".";
