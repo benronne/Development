@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'haml'
 require 'sinatra/activerecord'
-set :database, 'sqlite3:///misterinks_db.sqlite3'
+set :database, 'sqlite3:///misterinks_db_new.sqlite3'
 require './models'
 
 get '/' do

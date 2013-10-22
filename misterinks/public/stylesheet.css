@@ -39,6 +39,8 @@ h1 {
 }
 
 #main_content p {
+	font-size: 18px;
+	font-family: "Bubbler One";
 	line-height: 1.5em;
 }
 
@@ -54,6 +56,14 @@ h1 {
 
 #main_content li {
 	color: #ffffff;
+}
+
+#main_content label {
+	margin: 5px;
+}
+
+#main_content input {
+	margin: 5px;
 }
 
 .clearfix:after {

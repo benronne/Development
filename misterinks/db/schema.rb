@@ -17,19 +17,7 @@ ActiveRecord::Schema.define(version: 20131021000448) do
     t.datetime "appointment"
   end
 
-  create_table "customer", force: true do |t|
-    t.string "fname"
-    t.string "lname"
-    t.string "email"
-    t.string "phone"
-  end
-
-  create_table "orders", force: true do |t|
-    t.string   "tattoo"
-    t.datetime "appointment"
-  end
-
-  create_table "users", force: true do |t|
+  create_table "customers", force: true do |t|
     t.string "fname"
     t.string "lname"
     t.string "email"

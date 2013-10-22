@@ -1,7 +1,7 @@
 %header
 	%h1 Appointments at Mister Ink's
 
-#main_content
+#main_content.clearfix
 	%form{:action => "/Appointments", :method => "POST"}
 		%fields
 			%ul
@@ -19,5 +19,5 @@
 					%input{:type => "text", :name => "phone", :class => "text"}
 				%li
 					%label{:for => "tattoo"} Tattoo Idea:
-					%textarea{:name => "tattoo"}
+					%input{:type => "text", :name => "tattoo", :class => "text"}
 			%input{:type => "submit", :value => "Submit", :class => "button"} 
